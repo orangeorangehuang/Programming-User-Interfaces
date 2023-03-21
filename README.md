@@ -1,6 +1,6 @@
 # Programming User Interfaces
 - Homework Repo for Programming User Interfaces (CSIE5216)
-- Lectured by Lung-Pang Cheng, NTU CSIE
+- Lectured by Lung-Pan Cheng, NTU CSIE
 - 2023 Spring
 
 ## HW1: HTML, CSS and JavaScript

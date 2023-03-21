@@ -1,4 +1,4 @@
-# Programming User Interfaces (CSIE5216)
+# Programming User Interfaces
 Homework Repo for Programming User Interfaces (CSIE5216)
 Lectured by Lung-Pang Cheng, NTU CSIE
 2023 Spring

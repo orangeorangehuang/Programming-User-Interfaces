@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SSUI HW1 - Details</title>
+  <link rel="icon" type="image/x-icon" href="site_images/scotty.png" >
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;500&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Your CSS Code -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- JSON Shirt Object -->
+  <script src="shirts.js"></script>
+
+  <!-- Your JS Code -->
+  <script src="main.js"></script>
+</head>
+<body onload="initDetails()">
+  <!-- Your Code Here -->
+
+  <!-- Header Part -->
+  <div class="header-top"></div>
+  <div class="header-main">
+    <a class="header-main-left" href="index.html">
+      <img class="header-main-left-logo" src="site_images/logo.png">
+    </a>
+    <div class="header-main-mid">Scotty Shirts U Illustrate (SSUI)</div>
+    <a class="header-main-right" href="not_implemented.html">
+      <img class="header-main-right-logo" src="site_images/shopping-cart.png">
+      <div>0</div>
+    </a>
+  </div>
+  <div class="header-menu" id="header-menu">
+    <a class="header-menu-element" href="products.html">
+      <div class="header-menu-name">T-SHIRTS</div>
+      <div class="header-menu-bar"></div>
+    </a>
+    <a class="header-menu-element" href="not_implemented.html">
+      <div class="header-menu-name">CREATE FROM PICTURE</div>
+      <div class="header-menu-bar"></div>
+    </a>
+    <a class="header-menu-element" href="not_implemented.html">
+      <div class="header-menu-name">CREATE YOUR OWN</div>
+      <div class="header-menu-bar"></div>
+    </a>
+    <a class="header-menu-element" href="not_implemented.html">
+      <div class="header-menu-name">ABOUT US</div>
+      <div class="header-menu-bar"></div>
+    </a>
+    <a class="header-menu-element" href="not_implemented.html">
+      <div class="header-menu-name">LOG IN</div>
+      <div class="header-menu-bar"></div>
+    </a>
+  </div>
+  <div id="hamburger-menu">
+    <div class="hamburger-icon-box">
+      <img class="hamburger-icon" src="site_images/menu.png" onclick="triggerHamburger()">
+    </div>
+  </div>
+  <div id="hamburger-box" style="display: none;">
+    <a class="hamburger-menu-element" href="products.html">
+      <div class="hamburger-menu-name">T-SHIRTS</div>
+    </a>
+    <a class="hamburger-menu-element" href="not_implemented.html">
+      <div class="hamburger-menu-name">CREATE FROM PICTURE</div>
+    </a>
+    <a class="hamburger-menu-element" href="not_implemented.html">
+      <div class="hamburger-menu-name">CREATE YOUR OWN</div>
+    </a>
+    <a class="hamburger-menu-element" href="not_implemented.html">
+      <div class="hamburger-menu-name">ABOUT US</div>
+    </a>
+    <a class="hamburger-menu-element" href="not_implemented.html">
+      <div class="hamburger-menu-name">LOG IN</div>
+    </a>
+  </div>
+
+  <!-- Content Part -->
+  <div class="detail-container">
+    <div class="detail-title" id="detail-title">Car-negie Mellon</div>
+    <div class="detail-content-box">
+      <img id="detail-content-img" src="shirt_images/car-white-front.png">
+      <div class="detail-content-right">
+        <div id="detail-content-price">$10.99</div>
+        <div id="detail-content-text">
+          As you move in to campus, one of the first memories so many students have is driving up to their dorm, unloading their bags, and moving in. How do they arrive to campus? By car, of course!
+        </div>
+        <div id="detail-content-side">
+          <div>Side: </div>
+          <div id="detail-content-side-button-box"></div>
+        </div>
+        <div id="detail-content-color">
+          <div>Color: </div>
+          <div id="detail-content-color-button-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a class="footer-element" href="not_implemented.html">
+      Contact Us
+    </a>
+    <a class="footer-element" href="not_implemented.html">
+      Site Map
+    </a>
+    <a class="footer-element" href="not_implemented.html">
+      Privacy Policy
+    </a>
+    <a class="footer-element" href="not_implemented.html">
+      Careers
+    </a>
+    <a class="footer-element" href="not_implemented.html">
+      Reviews
+    </a>
+    <a class="footer-element-credit">
+      Designed by Chia-Hung Huang
+    </a>
+  </div>
+</body>
+</html>

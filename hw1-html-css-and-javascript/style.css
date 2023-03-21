@@ -1,0 +1,556 @@
+/* Your Code Here */
+
+/* Global Settings */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+
+/* Header Part */
+.header-top {
+  background-color: #c51230;
+  width: 100%;
+  height: 20pt;
+}
+
+.header-main {
+  height: 100pt;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-size: 45px;
+  font-family: Catamaran;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-main-left {
+  height: 100%;
+  display: flex;
+  vertical-align: middle;
+}
+
+.header-main-left-logo {
+  height: 70pt;
+}
+@media(max-width: 750px) {
+  .header-main-left-logo {
+    height: 50pt;
+  }
+}
+@media(max-width: 400px) {
+  .header-main-left-logo {
+    height: 25pt;
+  }
+}
+
+.header-main-mid {
+  align-self: center;
+  margin: auto;
+}
+@media(max-width: 750px) {
+  .header-main-mid {
+    font-size: 20pt;
+    align-self: center;
+    margin: auto;
+  }
+}
+@media(max-width: 400px) {
+  .header-main-mid {
+    font-size: 12pt;
+    align-self: center;
+    margin: auto;
+  }
+}
+
+.header-main-right {
+  display: flex;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  border-radius: 10pt;
+  background-color: #c51230;
+
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-size: 25pt;
+  color: white;
+}
+@media(max-width: 750px) {
+  .header-main-right {
+    display: flex;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    padding-top: 2pt;
+    padding-bottom: 2pt;
+    border-radius: 5pt;
+    background-color: #c51230;
+  
+    font-family: "Open Sans";
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+  }
+}
+
+.header-main-right:hover {
+  box-shadow: 2px 2px 2px black;
+}
+
+.header-main-right-logo {
+  height: 30pt;
+  margin-right: 10pt;
+}
+
+#header-menu {
+  height: 50pt;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 1pt;
+  border-color: grey;
+
+  font-size: 20px;
+  font-family: Catamaran;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+#hamburger-menu {
+  height: 50pt;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 1pt;
+  border-color: grey;
+
+  font-size: 20px;
+  font-family: Catamaran;
+  display: block;
+  flex-wrap: wrap;
+}
+
+@media(min-width: 650px) {
+  #hamburger-box {
+    display: none;
+  }
+}
+#hamburger-box {
+  display: none;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 1pt;
+  border-color: grey;
+
+  font-size: 20px;
+  font-family: Catamaran;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#hamburger-menu {
+  display: none;
+}
+#hamburger-menu:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 650px) {
+  #header-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: flex;
+  }
+}
+
+.header-menu-element {
+  margin: auto;
+  font-weight: 200;
+  font-size: 13pt;
+  text-decoration: none;
+  color: #c51230;
+  border: 0;
+}
+
+.hamburger-menu-element {
+  font-weight: 200;
+  font-size: 13pt;
+  text-decoration: none;
+  color: #c51230;
+  border: 0;
+}
+
+.header-menu-bar {
+  background-color: transparent;
+  height: 5pt;
+}
+
+.header-menu-element:hover .header-menu-bar{
+  background-color: #c51230;
+  transition: 1s;
+}
+
+.hamburger-icon {
+  margin-top: 10pt;
+  padding-left: 12%;
+  height: 25pt;
+  vertical-align: middle;
+  align-self: center;
+}
+
+.hamburger-icon-box {
+  width: 100%;
+  align-items: center;
+  vertical-align: middle;
+  align-content: center;
+}
+
+
+/* Main Content Part */
+.main-img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-text-box {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.main-text {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  border: solid;
+  border-width: 5pt;
+  border-radius: 10pt;
+  border-color: #c51230;
+}
+
+.main-text-title {
+  font-size: 20pt;
+  font-weight: 200;
+  color: #c51230;
+
+  margin-bottom: 10pt;
+}
+
+/* Footer Part */
+.footer {
+  background-color: #c51230;
+  height: 50pt;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer a {
+  margin: auto;
+  color: gainsboro;
+  font-family: "Open Sans";
+  font-size: 12pt;
+  text-decoration: none;
+}
+
+.footer-element:hover {
+  color: white;
+}
+
+
+/* Null Page Part */
+.null-img {
+  margin-top: 5%;
+  opacity:0.5;
+  width: 40%;
+}
+
+.null-text {
+  opacity:0.5;
+  text-align: center;
+  font-size: 20pt;
+}
+
+
+/* Products Page Part */
+.content-box {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+}
+
+.content-title {
+  color: black;
+  font-family: Catamaran;
+  font-size: 30pt;
+  margin-top: 2%;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.content-item {
+  border: solid;
+  border-width: 2pt;
+  border-radius: 10pt;
+  border-color: #c51230;
+  margin: 1%;
+  font-family: Catamaran;
+}
+
+.content-item-img {
+  border-radius: 10pt 10pt 0pt 0pt;
+}
+.content-item-img:hover {
+  cursor: pointer;
+}
+
+.content-item-title {
+  color: #c51230;
+  font-size: 20pt;
+  font-weight: 300;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.content-item-text {
+  font-size: 12pt;
+  font-weight: 300;
+  margin-left: 5%;
+}
+
+.content-item-button-box {
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.content-item-button {
+  margin: auto;
+  background-color: #c51230;
+  color: white;
+  font-weight: 300;
+  border-radius: 3pt;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.content-item-button:hover {
+  cursor: pointer;
+}
+
+
+/* Preview Part */
+
+.preview-box {
+  display: none;
+  background-color: lightgray;
+  height: 320pt;
+  margin-bottom: 10pt;
+}
+
+.preview-box-left {
+  display: flex;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 3%;
+}
+
+.preview-img {
+  height: 280pt;
+  margin-left: 0;
+  margin-right: 0;
+}
+.preview-img:hover {
+  cursor: pointer;
+}
+
+.preview-box-right {
+  width: 40%;
+  margin-left: 3%;
+  margin-right: 5%;
+  margin-top: 3%;
+  font-family: Catamaran;
+}
+
+#preview-title {
+  font-size: 30pt;
+  font-weight: 300;
+  margin-bottom: 20pt;
+}
+
+#preview-price {
+  color: #c51230;
+  font-size: 20pt;
+  font-weight: 300;
+  margin-bottom: 10pt;
+}
+
+#preview-text {
+  color: #c51230;
+  font-size: 13pt;
+  font-weight: 300;
+  margin-bottom: 30pt;
+}
+
+#preview-button {
+  background-color: #c51230;
+  color: white;
+  font-weight: 300;
+  width: 25pt;
+  border-radius: 3pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  padding-left: 15pt;
+  padding-right: 15pt;
+}
+#preview-button:hover {
+  cursor: pointer;
+}
+
+
+/* Detail Part */
+.detail-title {
+  color: black;
+  font-family: Catamaran;
+  font-size: 30pt;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.detail-content-box {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.detail-content-right {
+  margin-left: 3%;
+  width: 60%;
+}
+
+#detail-content-price {
+  color: #c51230;
+  font-family: Catamaran;
+  font-size: 30pt;
+  font-weight: 300;
+  margin-bottom: 2%;
+}
+
+#detail-content-text {
+  color: #c51230;
+  font-family: Catamaran;
+  font-size: 15pt;
+  font-weight: 300;
+  margin-bottom: 2%;
+}
+
+#detail-content-side {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  color: gray;
+}
+
+#detail-content-side {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  color: gray;
+}
+
+#detail-content-color {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  color: gray;
+}
+
+#detail-content-side-button-box {
+  display: flex;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.detail-content-side-button {
+  display: flex;
+  margin: auto;
+  background-color: #c51230;
+  font-family: Catamaran;
+  color: lightgray;
+  font-weight: 300;
+  width: 25pt;
+  border-radius: 3pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  padding-left: 15pt;
+  padding-right: 15pt;
+  margin-right: 10pt;
+}
+.detail-content-side-button:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#detail-content-color-button-box {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.detail-content-color-button {
+  display: flex;
+  margin: auto;
+  font-weight: 300;
+  color: black;
+  font-family: Catamaran;
+  text-align: center;
+  border: solid;
+  border-color: #c51230;
+  border-radius: 3pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  margin-right: 10pt;
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
+.detail-content-color-button:hover {
+  cursor: pointer;
+  color: grey;
+}
+

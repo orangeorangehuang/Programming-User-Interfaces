@@ -9,7 +9,7 @@
 - [x] Header
 - [x] Footer
 - [x] hover
-    - Cursor will change to pointer on all clickable elements.
+    - Mouse cursor will change to hand pointer on all clickable elements.
     - The top menu items display an animated red bottom border.
     - Other buttons change the text color on hover.
 - [x] `index.html`

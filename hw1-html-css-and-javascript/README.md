@@ -9,6 +9,9 @@
 - [x] Header
 - [x] Footer
 - [x] hover
+    - Cursor will change to pointer on all clickable elements.
+    - The top menu items display an animated red bottom border.
+    - Other buttons change the text color on hover.
 - [x] `index.html`
 - [x] `product.html`
 - [x] `details.html`
@@ -23,11 +26,13 @@
         - Information about the shirt (Name, Price, Description)
         - A `Close` button.
     - When the `Quick View` button of a shirt block is clicked, the sceen will scroll to the Quick View Block.
-    - When the `Close` button is clicked, the screen will scoll back to the original shirt block in which the user just clicker the `Quick View` button.
+    - When the `Close` button is clicked, the screen will scoll back to the original shirt block in which the user just clicked the `Quick View` button.
 
 - [x] Responsive Web Page
     - As the width decreases, the page rearranges and changes content.
     - The header menu will be changed into a hamburger menu. This is implemented with the `@media` entry in the `css` file.
+    - Demo Video
+        - ![Image](https://github.com/orangeorangehuang/programming-user-interfaces/hw1-html-css-and-javascript/blob/main/RWD_Demo.gif)
 
 
 ## 2. Testing

@@ -32,7 +32,7 @@
     - As the width decreases, the page rearranges and changes content.
     - The header menu will be changed into a hamburger menu. This is implemented with the `@media` entry in the `css` file.
     - Demo Video
-        - ![Image](https://github.com/orangeorangehuang/programming-user-interfaces/hw1-html-css-and-javascript/blob/main/RWD_Demo.gif)
+        - ![Image](https://github.com/orangeorangehuang/Programming-User-Interfaces/blob/main/hw1-html-css-and-javascript/RWD_Demo.gif)
 
 
 ## 2. Testing

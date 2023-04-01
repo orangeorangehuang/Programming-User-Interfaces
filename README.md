@@ -4,11 +4,11 @@
 - 2023 Spring
 
 ## HW1: HTML, CSS and JavaScript
-- Homework SPEC: [Link](https://hackmd.io/@JzlEUD93ThWqJ7ZGOqTbeQ/Sk1OTRcJn)
+- SPEC: [Link](https://hackmd.io/@JzlEUD93ThWqJ7ZGOqTbeQ/Sk1OTRcJn)
 - Grading Policy: [Link](https://hackmd.io/@JzlEUD93ThWqJ7ZGOqTbeQ/rkD7UmVl3)
 - My Code: [Link](https://github.com/orangeorangehuang/Programming-User-Interfaces/tree/main/hw1-html-css-and-javascript)
 
 ## HW2: Handling Input Events
-- Homework SPEC: [Link](https://hackmd.io/@akairisu/HkUibgmx3)
+- SPEC: [Link](https://hackmd.io/@akairisu/HkUibgmx3)
 - Grading Policy: [Link](https://hackmd.io/@akairisu/ryyVbjSg3)
 - My Code: [Link](https://github.com/orangeorangehuang/Programming-User-Interfaces/tree/main/hw2-handling-input-events)

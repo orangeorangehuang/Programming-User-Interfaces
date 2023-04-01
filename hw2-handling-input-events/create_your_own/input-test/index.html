@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input-Test-experiments</title>
+    <style>
+      body {
+        width: 100%;
+        height: 120vh;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      #workarea {
+        width: 100%;
+        height: 280px;
+        background-color: lightgray;
+
+        position: relative;
+
+        flex-shrink: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #target {
+        width: 50%;
+        height: 50%;
+        background-color: lightgreen;
+        border: 2px solid black;
+      }
+     
+      #captureworkarea {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: grey;
+        border: 2px solid black;
+        bottom: 0;
+        right: 0;
+        color: white;
+      }
+
+      #capturetarget {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: darkgreen;
+        border: 2px solid black;
+        bottom: 25px;
+        right: 25px;
+        color: white;
+      }
+
+      #clearButtonContainer {
+        padding-top: 5px;
+        width: 100%;
+
+        flex-shrink: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+
+      #clearButtonContainer button {
+        padding: 2px;
+      }
+
+      #display {
+        flex: 1;
+        display: flex;
+      }
+
+      .half {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .half h4 {
+        width: 100%;
+        text-align: left;
+        padding-left: 5px;
+      }
+
+      .printArea {
+        width: 100%;
+        flex: 1;
+        overflow: auto;
+      }
+
+      .item {
+        margin: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <h3>Please click or touch the gray area below:</h3> -->
+    <div id="workarea">
+      <div id="captureworkarea" >
+        Capture click
+        <div id="capturetarget" >
+            
+        </div>
+      </div>
+      <div id="target"></div>
+    </div>
+
+    <div id="clearButtonContainer">
+      <button id="clear-button">Clear</button>
+
+      <button id="mousemove-toggle-button">Hiding mousemove events</button>
+
+      <button id="touchmove-toggle-button">Hiding touchmove events</button>
+    </div>
+
+    <div id="display">
+      <div class="half">
+        <h4>workarea (gray)</h4>
+        <div class="printArea" id="workarea-events-display"></div>
+      </div>
+      <div class="half">
+        <h4>target (green)</h4>
+        <div class="printArea" id="target-events-display"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <title>R11922101-HW3</title>
+</head>
+<body>
+  <div id="main">
+    
+    <!-- Part I: Control Panel -->
+    <div id="control-panel">
+      <div id="box-layer">
+        <div class="box-title">Layers:</div>
+        <div class="box-items-layer">
+          <input id="layer-canvas" type="radio" name="layer" value="Canvas"> Show Canvas Layer<br/>
+          <input id="layer-svg" type="radio" name="layer" value="SVG" checked> Show SVG Layer<br/>
+          <input id="layer-both" type="radio" name="layer" value="Both"> Show Both Layers<br/>
+        </div>
+      </div>
+      <div id="box-mode">
+        <div class="box-title">Mode:</div>
+        <span class="box-items">
+          <div class="btn-item" >
+            <img class="btn-img" src="assets/cursor.png" id="mode-cursor">
+          </div>
+          <div class="btn-item">
+            <img class="btn-img" src="assets/line.png" id="mode-line">
+          </div>
+          <div class="btn-item focus">
+            <div class="selection btn-rect" id="mode-rect"></div>
+          </div>
+          <div class="btn-item">
+            <div class="selection" id="mode-circ"></div>
+          </div>
+        </span>
+      </div>
+      <div id="box-border-color">
+        <div class="box-title">Border Color:</div>
+        <span class="box-items">
+          <div class="btn-item" id="box-border-none">
+            <div class="btn-rect btn-color btn-color-none" id="btn-border-none">None</div>
+          </div>
+          <div class="btn-item" id="box-border-white">
+            <div class="btn-rect btn-color btn-color-white" id="btn-border-white"></div>
+          </div>
+          <div class="btn-item" id="box-border-grey">
+            <div class="btn-rect btn-color btn-color-grey" id="btn-border-grey"></div>
+          </div>
+          <div class="btn-item focus" id="box-border-black">
+            <div class="btn-rect btn-color btn-color-black" id="btn-border-black"></div>
+          </div>
+        </span>
+        <span class="box-items">
+          <div class="btn-item" id="box-border-yellow">
+            <div class="btn-rect btn-color btn-color-yellow" id="btn-border-yellow"></div>
+          </div>
+          <div class="btn-item" id="box-border-red">
+            <div class="btn-rect btn-color btn-color-red" id="btn-border-red"></div>
+          </div>
+          <div class="btn-item" id="box-border-blue">
+            <div class="btn-rect btn-color btn-color-blue" id="btn-border-blue"></div>
+          </div>
+          <div class="btn-item box-border-green" id="box-border-green">
+            <div class="btn-rect btn-color btn-color-green" id="btn-border-green"></div>
+          </div>
+        </span>
+      </div>
+      <div id="box-border-width">
+        <div class="box-title">Border Width:</div>
+        <div class="box-items">
+          <input id="range-bar" type="range" class="range-bar" name="border-width" min="1" max="30" value="3">
+          <div id="range-value">3</div>
+        </div>
+      </div>
+      <div id="box-fill">
+        <div class="box-title">Fill Color:</div>
+        <span class="box-items">
+          <div class="btn-item" id="box-fill-none">
+            <div class="btn-rect btn-color btn-color-none" id="btn-fill-none">None</div>
+          </div>
+          <div class="btn-item" id="box-fill-white">
+            <div class="btn-rect btn-color btn-color-white" id="btn-fill-white"></div>
+          </div>
+          <div class="btn-item" id="box-fill-grey">
+            <div class="btn-rect btn-color btn-color-grey" id="btn-fill-grey"></div>
+          </div>
+          <div class="btn-item" id="box-fill-black">
+            <div class="btn-rect btn-color btn-color-black" id="btn-fill-black"></div>
+          </div>
+        </span>
+        <span class="box-items">
+          <div class="btn-item" id="box-fill-yellow">
+            <div class="btn-rect btn-color btn-color-yellow" id="btn-fill-yellow"></div>
+          </div>
+          <div class="btn-item" id="box-fill-red">
+            <div class="btn-rect btn-color btn-color-red" id="btn-fill-red"></div>
+          </div>
+          <div class="btn-item" id="box-fill-blue">
+            <div class="btn-rect btn-color btn-color-blue" id="btn-fill-blue"></div>
+          </div>
+          <div class="btn-item focus" id="box-fill-green">
+            <div class="btn-rect btn-color btn-color-green" id="btn-fill-green"></div>
+          </div>
+        </span>
+      </div>
+      <div id="box-delete">
+        <div class="box-title">Delete:</div>
+        <div class="box-items">
+          <input id="btn-delete-one" class="btn-delete" type="button" value="Delete" disabled>
+          <input id="btn-delete-all" class="btn-delete" type="button" value="Delete All">
+        </div>
+      </div>
+    </div>
+
+    <!-- Part II: Painting Area -->
+    <div id="painting-area">
+      <svg id="area-svg" width="850" height="850">
+        <defs>
+          <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur result="blurOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+          </filter>
+        </defs>
+      </svg>
+      <canvas id="area-canvas" width="850" height="850" style="display: none;"></canvas>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="floodfill.js"></script>
+</body>
+</html>

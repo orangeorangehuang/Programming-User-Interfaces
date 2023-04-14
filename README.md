@@ -12,3 +12,7 @@ The Homework Repo for Programming User Interfaces (CSIE5216)
 - SPEC: [Link](https://hackmd.io/@akairisu/HkUibgmx3)
 - Grading Policy: [Link](https://hackmd.io/@akairisu/ryyVbjSg3)
 - My Code: [Link](https://github.com/orangeorangehuang/Programming-User-Interfaces/tree/main/hw2-handling-input-events)
+
+## HW3: Graphics Using SVG and Canvas
+- SPEC and Grading Policy: [Link](https://hackmd.io/@JzlEUD93ThWqJ7ZGOqTbeQ/BJCaySVl3)
+- My Code: [Link](https://github.com/orangeorangehuang/Programming-User-Interfaces/tree/main/hw3-graphics-using-svg-and-canvas)

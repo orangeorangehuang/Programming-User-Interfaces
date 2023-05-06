@@ -1,0 +1,55 @@
+.commandListContainer {
+  position: absolute;
+  top: 10px;
+  left: 1110px;
+
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-left-width: 0px;
+  background-color: white;
+
+  width: 200px;
+  height: 700px;
+
+  overflow: auto;
+}
+
+.commandItem {
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.disabled {
+  background-color: gray;
+  text-decoration: line-through;
+}
+
+.focused {
+  background-color: black;
+  color: greenyellow;
+}
+
+.color-fff {
+  background-color: #fff;
+}
+.color-bfbfbf {
+  background-color: #bfbfbf;
+}
+.color-000 {
+  background-color: #000;
+  color: #fff;
+}
+.color-fffe55 {
+  background-color: #fffe55;
+}
+.color-ea3323 {
+  background-color: #ea3323;
+}
+.color-4faeea {
+  background-color: #4faeea;
+}
+.color-9fce63 {
+  background-color: #9fce63;
+  color: #000;
+}

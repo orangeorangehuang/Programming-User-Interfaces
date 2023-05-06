@@ -1,0 +1,100 @@
+.ControlPanel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: white;
+
+  width: 300px;
+  height: 700px;
+
+  user-select: none;
+}
+
+.ControlPanel .Control {
+  padding: 2px 10px;
+  margin: 5px 0px;
+}
+
+.ControlPanel .Control:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.Control h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ControlPanel .Control label {
+  display: block;
+  user-select: none;
+  cursor: pointer;
+}
+
+.Control .DeleteButtonsContainer,
+.Control .UndoRedoButtonsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.DeleteButtonsContainer button,
+.UndoRedoButtonsContainer button {
+  width: 45%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.05rem;
+}
+
+.ButtonIcon {
+  font-size: 1.1rem;
+  margin-right: 4px;
+}
+
+.Modes {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.Mode {
+  flex-shrink: 0;
+  margin: 2px 5px;
+  width: 56px;
+  height: 36px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mode.Active {
+  border-radius: 5px;
+  border: 2px solid blue;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.Modes.Disabled .Mode {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.Mode img {
+  max-width: 60%;
+  max-height: 70%;
+}
+
+.Mode .ColorBlock {
+  width: 40px;
+  height: 20px;
+  border: 1px solid lightgray;
+  user-select: none;
+}

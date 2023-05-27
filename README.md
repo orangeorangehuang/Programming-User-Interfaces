@@ -25,3 +25,9 @@ The Homework Repo for Programming User Interfaces (CSIE5216)
 ## HW5: Undo Using Command Objects
 - SPEC and Grading Policy: [Link](https://hackmd.io/@JzlEUD93ThWqJ7ZGOqTbeQ/Hk_Dxn0en)
 - My Code: [Link](https://github.com/orangeorangehuang/Programming-User-Interfaces/tree/main/hw5-undo-using-command-objects)
+
+## HW6: Cconnecting to a Backend
+- SPEC: [Link](https://hackmd.io/@akairisu/Sy8CUT3m3)
+- Grading Policy: [Link](https://hackmd.io/@akairisu/rJ-Kbqk4h)
+- My Code: [Link](https://github.com/orangeorangehuang/Programming-User-Interfaces/tree/main/hw6-connecting-to-a-backend)
+- Deploy Link: [Link](https://r11922101-pui-hw6.netlify.app/)
